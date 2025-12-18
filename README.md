@@ -1,10 +1,11 @@
-# Mahasapak Website
+# Mahasa Pakistan Website
 
-A modern, responsive static website built with HTML5, CSS3, and JavaScript. Fully optimized for deployment on Cloudflare Pages.
+Professional trading house website established 1994. A modern, responsive static website built with HTML5, CSS3, and JavaScript showcasing telecommunications, construction, energy, and industrial solutions. Fully optimized for deployment on Cloudflare Pages.
 
 ## 🌟 Features
 
-- **Modern Design**: Clean, professional aesthetic with smooth animations
+- **Professional B2B Design**: Clean, professional aesthetic suitable for telecommunications and engineering business
+- **Real Business Information**: Actual company data, 6 group companies, 25 overseas principals, 4 international offices
 - **Fully Responsive**: Optimized for mobile, tablet, and desktop devices
 - **Fast Performance**: Lightweight and optimized for quick load times
 - **SEO-Friendly**: Semantic HTML and meta tags for search engine optimization
@@ -26,10 +27,12 @@ The website uses a consistent green color scheme:
 
 ```
 mahasapak-website/
-├── index.html          # Homepage
-├── about.html          # About page with company info and team
-├── services.html       # Services page with pricing
-├── contact.html        # Contact page with form and map
+├── index.html          # Homepage with company overview
+├── about.html          # Company history (1994-2002), 6 group companies, leadership team
+├── services.html       # Telecommunications, construction, energy, and project management services
+├── inventory.html      # Stock and equipment inventory (Ericsson, Alcatel, Nortel, Siemens, batteries, cables)
+├── principals.html     # 25 overseas principals across UK, USA, China, Sweden, Australia, Korea, Algeria, South Africa
+├── contact.html        # 4 office locations (Pakistan HQ, Branch, USA, China) with leadership contacts
 ├── 404.html           # Custom error page
 ├── .htaccess          # Apache server configuration
 ├── cloudflare.json    # Cloudflare Pages configuration
@@ -140,93 +143,34 @@ mahasapak-website/
 
 ## 🎨 Customization Guide
 
-### Updating Content
+### Company Information
 
-#### 1. Homepage (index.html)
+#### Mahasa Pakistan Group
+- **Established**: 1994 (as trading house)
+- **Group Formation**: 2002
+- **6 Companies**: Mahasa Pakistan, Al-Muhammad Business Links, The Surgicals, Abu Talib Traders, Khuarazmi Syeds Pakistan, Gilani Traders International
 
-**Hero Section**:
-```html
-<!-- Line 32-38 in index.html -->
-<h1>Welcome to Mahasapak</h1>
-<p>Your custom tagline here...</p>
-```
+#### Services
+- Telecommunications solutions (GSM networks, microwave systems)
+- Construction projects (industrial & commercial)
+- Energy sector solutions
+- Project management, survey, engineering
+- Installation & commissioning (civil & mechanical)
 
-**Features**:
-```html
-<!-- Lines 47-98 in index.html -->
-<div class="card feature-card">
-    <div class="card-icon feature-icon">⚡</div>
-    <h3 class="card-title">Your Feature</h3>
-    <p class="card-text">Your description...</p>
-</div>
-```
+#### Inventory
+- Ericsson, Alcatel, Nortel, Siemens equipment
+- Microwave indoor/outdoor GSM network equipment
+- Batteries (communication, military tanks, vehicular)
+- Cables for major manufacturers with STM1 magazines
 
-**Testimonials**:
-```html
-<!-- Lines 140-159 in index.html -->
-<p class="testimonial-text">"Your testimonial..."</p>
-<p class="testimonial-author">Client Name</p>
-<p class="testimonial-role">Position, Company</p>
-```
+#### 25 Overseas Principals
+Partners across UK, USA, China, Sweden, Australia, Korea, Algeria, and South Africa
 
-#### 2. About Page (about.html)
-
-**Company Story**:
-```html
-<!-- Lines 35-45 in about.html -->
-<h2>Our Story</h2>
-<p>Your company story...</p>
-```
-
-**Team Members**:
-```html
-<!-- Lines 128-139 in about.html -->
-<div class="team-photo">AS</div>
-<h4 class="team-name">Team Member Name</h4>
-<p class="team-position">Position</p>
-```
-
-#### 3. Services Page (services.html)
-
-**Service Cards**:
-```html
-<!-- Lines 36-59 in services.html -->
-<h3 class="card-title">Service Name</h3>
-<p class="card-text">Service description...</p>
-<ul class="service-features">
-    <li>Feature 1</li>
-    <li>Feature 2</li>
-</ul>
-```
-
-**Pricing**:
-```html
-<!-- Lines 116-146 in services.html -->
-<h3 class="card-title text-center">Plan Name</h3>
-<div class="service-price text-center">$999/mo</div>
-```
-
-#### 4. Contact Page (contact.html)
-
-**Contact Information**:
-```html
-<!-- Lines 71-109 in contact.html -->
-<p>info@mahasapak.com</p>
-<p>+1 (555) 123-4567</p>
-```
-
-**Map Embed**:
-```html
-<!-- Line 163 in contact.html -->
-<iframe src="YOUR_GOOGLE_MAPS_EMBED_URL" ...></iframe>
-```
-To get your Google Maps embed URL:
-1. Visit [Google Maps](https://www.google.com/maps)
-2. Search for your business address
-3. Click the "Share" button
-4. Select "Embed a map"
-5. Copy the iframe HTML code
-6. Replace the src URL in contact.html
+#### Office Locations
+- **Pakistan Head Office**: 205/3-A Tufail Road, Rawalpindi-Cantt
+- **Pakistan Branch**: 205/3A, Tufail Road, Rawalpindi-Cantt
+- **USA Office**: 965 S Roslyn Way, Centennial, CO 80112
+- **China Office**: Baoding Mahasa Import & Export Co. Ltd
 
 ### Changing Colors
 
@@ -405,8 +349,11 @@ For questions or issues:
 
 ### Version 1.0.0 (2024)
 
-- Initial release
-- 5 HTML pages (Home, About, Services, Contact, 404)
+- Initial release with real business information
+- 7 HTML pages (Home, About, Services, Inventory, Principals, Contact, 404)
+- Real company data: 1994 establishment, 6 group companies, 25 overseas principals
+- 4 international office locations with accurate contact information
+- Telecommunications and engineering services
 - Responsive CSS framework
 - Interactive JavaScript features
 - Cloudflare Pages ready
@@ -415,6 +362,6 @@ For questions or issues:
 
 ---
 
-**Built with ❤️ by Mahasapak Team**
+**Built for Mahasa Pakistan - Professional Trading House since 1994**
 
 For the latest updates, visit [mahasapak.com](https://mahasapak.com)
