@@ -3,119 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - MahaSapak</title>
+    <title>Contact Us - Mahasapak</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #f9f9f9;
         }
-        
+
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #2D7A4A;
             color: white;
-            padding: 2rem 0;
-            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        
+
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            text-align: center;
+            font-size: 2rem;
+            margin: 1rem 0;
         }
-        
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
+
         .container {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
-        
+
         .contact-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
             margin-bottom: 3rem;
         }
-        
-        .contact-info {
-            background: #f8f9fa;
+
+        .contact-form {
+            background: white;
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
-        .contact-info h2 {
-            color: #667eea;
+
+        .contact-form h2 {
+            color: #2D7A4A;
             margin-bottom: 1.5rem;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
-        
-        .contact-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .contact-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        
-        .contact-item h3 {
-            color: #764ba2;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .contact-item p {
-            color: #666;
-            line-height: 1.8;
-        }
-        
-        .contact-item a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-        
-        .form-section {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        .form-section h2 {
-            color: #667eea;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
-        
+
         .form-group {
             margin-bottom: 1.5rem;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #333;
             font-weight: 500;
+            color: #333;
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -125,85 +77,196 @@
             font-family: inherit;
             font-size: 1rem;
         }
-        
+
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #2D7A4A;
+            box-shadow: 0 0 5px rgba(45, 122, 74, 0.3);
         }
-        
+
         .form-group textarea {
             resize: vertical;
-            min-height: 150px;
+            min-height: 120px;
         }
-        
-        .btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+        .submit-btn {
+            background-color: #2D7A4A;
             color: white;
             padding: 0.75rem 2rem;
             border: none;
             border-radius: 4px;
-            font-size: 1rem;
             cursor: pointer;
-            transition: transform 0.2s;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
         }
-        
-        .btn:hover {
-            transform: translateY(-2px);
+
+        .submit-btn:hover {
+            background-color: #1f5630;
         }
-        
-        .map-section {
-            margin-top: 3rem;
+
+        .office-addresses {
+            background: white;
             padding: 2rem;
-            background: #f8f9fa;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
-        .map-section h2 {
-            color: #667eea;
+
+        .office-addresses h2 {
+            color: #2D7A4A;
             margin-bottom: 1.5rem;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
-        
-        .map-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 66.66%;
-            height: 0;
-            overflow: hidden;
+
+        .office {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .office:last-child {
+            border-bottom: none;
+        }
+
+        .office h3 {
+            color: #2D7A4A;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .office p {
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .map-section {
+            background: white;
+            padding: 2rem;
             border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
         }
-        
-        .map-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+
+        .map-section h2 {
+            color: #2D7A4A;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        #map {
             width: 100%;
-            height: 100%;
-            border: none;
+            height: 400px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
-        
+
+        .map-info {
+            text-align: center;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .directions-btn {
+            display: inline-block;
+            background-color: #2D7A4A;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .directions-btn:hover {
+            background-color: #1f5630;
+        }
+
+        .leadership-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+
+        .leadership-section h2 {
+            color: #2D7A4A;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .leader-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-top: 3px solid #2D7A4A;
+        }
+
+        .leader-card h3 {
+            color: #2D7A4A;
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-card p {
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .leader-card .title {
+            font-weight: 600;
+            color: #333;
+        }
+
         footer {
-            background: #333;
+            background-color: #2D7A4A;
             color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 2rem 1rem;
             margin-top: 3rem;
         }
-        
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: text-decoration 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .contact-section {
                 grid-template-columns: 1fr;
             }
-            
+
             header h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
-            
-            .container {
-                padding: 1rem;
+
+            .leadership-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -211,78 +274,132 @@
 <body>
     <header>
         <h1>Contact Us</h1>
-        <p>Get in touch with MahaSapak</p>
     </header>
-    
+
     <div class="container">
+        <!-- Contact Form and Office Addresses Section -->
         <div class="contact-section">
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                
-                <div class="contact-item">
-                    <h3>Address</h3>
-                    <p>Office #414<br>
-                    Poonch House Complex<br>
-                    Rawalpindi-Cantt<br>
-                    Pakistan</p>
-                </div>
-                
-                <div class="contact-item">
-                    <h3>Phone</h3>
-                    <p><a href="tel:+92512345678">+92 51 2345678</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p><a href="mailto:info@mahasapak.com">info@mahasapak.com</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                    Saturday: 10:00 AM - 2:00 PM<br>
-                    Sunday: Closed</p>
-                </div>
-            </div>
-            
-            <div class="form-section">
-                <h2>Send us a Message</h2>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
                 <form>
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
+
+            <!-- Office Addresses -->
+            <div class="office-addresses">
+                <h2>Our Offices</h2>
+                <div class="office">
+                    <h3>Pakistan Head Office</h3>
+                    <p>Office #414 Poonch House Complex</p>
+                    <p>Rawalpindi-Cantt 46000</p>
+                    <p>Pakistan</p>
+                </div>
+                <div class="office">
+                    <h3>Pakistan Branch Office</h3>
+                    <p>Contact us for details</p>
+                </div>
+                <div class="office">
+                    <h3>USA Office</h3>
+                    <p>Contact us for details</p>
+                </div>
+                <div class="office">
+                    <h3>China Office</h3>
+                    <p>Contact us for details</p>
+                </div>
+            </div>
         </div>
-        
+
+        <!-- Map Section -->
         <div class="map-section">
-            <h2>Our Location</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.958769785965!2d72.44395!3d33.59201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd99dc99c01%3A0x1!2sOffice%20%23414%2C%20Poonch%20House%20Complex!5e0!3m2!1sen!2s!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Find Us on the Map</h2>
+            <div id="map"></div>
+            <div class="map-info">
+                <p>Our main office location: Office #414 Poonch House Complex, Rawalpindi-Cantt 46000, Pakistan</p>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://www.google.com/maps/search/Office+414+Poonch+House+Complex+Rawalpindi+Cantt+46000+Pakistan" target="_blank" class="directions-btn">Get Directions</a>
+            </div>
+        </div>
+
+        <!-- Leadership Team Section -->
+        <div class="leadership-section">
+            <h2>Leadership Team</h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <h3>Asad Alipak</h3>
+                    <p class="title">Founder & CEO</p>
+                    <p>asad@mahasapak.com</p>
+                </div>
+                <div class="leader-card">
+                    <h3>Muhammad Hassan</h3>
+                    <p class="title">Chief Technology Officer</p>
+                    <p>hassan@mahasapak.com</p>
+                </div>
+                <div class="leader-card">
+                    <h3>Fatima Khan</h3>
+                    <p class="title">Operations Manager</p>
+                    <p>fatima@mahasapak.com</p>
+                </div>
+                <div class="leader-card">
+                    <h3>Ahmed Malik</h3>
+                    <p class="title">Business Development</p>
+                    <p>ahmed@mahasapak.com</p>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <footer>
-        <p>&copy; 2024 MahaSapak. All rights reserved.</p>
+        <p>&copy; 2025 Mahasapak. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
     </footer>
+
+    <script>
+        // Initialize map with Office #414 location
+        function initMap() {
+            const officeLocation = {lat: 33.2008, lng: 72.4731};
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: officeLocation
+            });
+            new google.maps.Marker({
+                position: officeLocation,
+                map: map,
+                title: 'Office #414 Poonch House Complex, Rawalpindi-Cantt'
+            });
+        }
+        
+        // Load map when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initMap);
+        } else {
+            initMap();
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 </body>
 </html>
