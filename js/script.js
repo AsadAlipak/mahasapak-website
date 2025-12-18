@@ -172,7 +172,7 @@ function validateForm(formId) {
             form.reset();
             
             // In production, you would send data to a server here
-            console.log('Form submitted successfully:', formData);
+            // Example: fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) });
         }
     });
 }
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
             
             // In production, send to server
-            console.log('Newsletter subscription:', email);
+            // Example: fetch('/api/newsletter', { method: 'POST', body: JSON.stringify({ email }) });
         });
     });
 });
@@ -447,11 +447,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Since we're using native lazy loading, this is just a placeholder
 });
 
-// Log page load performance
+// Monitor page load performance
 window.addEventListener('load', function() {
     if (window.performance && window.performance.timing) {
         const perfData = window.performance.timing;
         const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
-        console.log('Page load time:', pageLoadTime + 'ms');
+        // For development/monitoring, you can send this to analytics:
+        // Example: sendToAnalytics('page_load_time', pageLoadTime);
     }
 });
