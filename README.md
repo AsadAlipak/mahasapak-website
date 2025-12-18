@@ -167,7 +167,7 @@ mahasapak-website/
 Partners across UK, USA, China, Sweden, Australia, Korea, Algeria, and South Africa
 
 #### Office Locations
-- **Pakistan Head Office**: 205/3-A Tufail Road, Rawalpindi-Cantt
+- **Pakistan Head Office**: Office #414, Poonch House Complex, Rawalpindi-Cantt, 46000, Pakistan
 - **Pakistan Branch**: 205/3A, Tufail Road, Rawalpindi-Cantt
 - **USA Office**: 965 S Roslyn Way, Centennial, CO 80112
 - **China Office**: Baoding Mahasa Import & Export Co. Ltd
