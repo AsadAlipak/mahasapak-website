@@ -439,13 +439,12 @@ function isInViewport(element) {
 // ============================================
 
 // Lazy load images if any (optional)
+// Note: Modern browsers support native lazy loading via the loading="lazy" attribute
+// No additional JavaScript required for browsers that support it
 document.addEventListener('DOMContentLoaded', function() {
-    if ('loading' in HTMLImageElement.prototype) {
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        images.forEach(img => {
-            img.src = img.dataset.src || img.src;
-        });
-    }
+    // For older browsers that don't support native lazy loading,
+    // images would need intersection observer or similar polyfill
+    // Since we're using native lazy loading, this is just a placeholder
 });
 
 // Log page load performance

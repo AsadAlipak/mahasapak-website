@@ -217,9 +217,16 @@ mahasapak-website/
 
 **Map Embed**:
 ```html
-<!-- Line 120 in contact.html -->
+<!-- Line 163 in contact.html -->
 <iframe src="YOUR_GOOGLE_MAPS_EMBED_URL" ...></iframe>
 ```
+To get your Google Maps embed URL:
+1. Visit [Google Maps](https://www.google.com/maps)
+2. Search for your business address
+3. Click the "Share" button
+4. Select "Embed a map"
+5. Copy the iframe HTML code
+6. Replace the src URL in contact.html
 
 ### Changing Colors
 
