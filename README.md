@@ -1,4 +1,4 @@
-# Mahasa Pakistan Website
+# Mahasa Pakistan (Pvt) Ltd. Website
 
 Professional trading house website established 1994. A modern, responsive static website built with HTML5, CSS3, and JavaScript showcasing telecommunications, construction, energy, and industrial solutions. Fully optimized for deployment on Cloudflare Pages.
 
@@ -145,10 +145,10 @@ mahasapak-website/
 
 ### Company Information
 
-#### Mahasa Pakistan Group
+#### Mahasa Pakistan (Pvt) Ltd. Group
 - **Established**: 1994 (as trading house)
 - **Group Formation**: 2002
-- **6 Companies**: Mahasa Pakistan, Al-Muhammad Business Links, The Surgicals, Abu Talib Traders, Khuarazmi Syeds Pakistan, Gilani Traders International
+- **6 Companies**: Mahasa Pakistan (Pvt) Ltd., Al-Muhammad Business Links, The Surgicals, Abu Talib Traders, Khuarazmi Syeds Pakistan, Gilani Traders International
 
 #### Services
 - Telecommunications solutions (GSM networks, microwave systems)
@@ -362,6 +362,6 @@ For questions or issues:
 
 ---
 
-**Built for Mahasa Pakistan - Professional Trading House since 1994**
+**Built for Mahasa Pakistan (Pvt) Ltd. - Professional Trading House since 1994**
 
 For the latest updates, visit [mahasapak.com](https://mahasapak.com)
